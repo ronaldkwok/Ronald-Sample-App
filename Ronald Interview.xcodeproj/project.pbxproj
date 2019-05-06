@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1775022252182C002D5F26 /* DrawingPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1775012252182C002D5F26 /* DrawingPadViewController.swift */; };
+		2F17750422521843002D5F26 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17750322521843002D5F26 /* CanvasView.swift */; };
+		2F332164225119C30005D7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F332163225119C30005D7F1 /* AppDelegate.swift */; };
+		2F332169225119C30005D7F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F332167225119C30005D7F1 /* Main.storyboard */; };
+		2F33216C225119C30005D7F1 /* Ronald_Interview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F33216A225119C30005D7F1 /* Ronald_Interview.xcdatamodeld */; };
+		2F33216E225119C30005D7F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F33216D225119C30005D7F1 /* Assets.xcassets */; };
+		2F332171225119C30005D7F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F33216F225119C30005D7F1 /* LaunchScreen.storyboard */; };
+		2F33218122511A380005D7F1 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33217A22511A380005D7F1 /* MovieListViewModel.swift */; };
+		2F33218222511A380005D7F1 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33217C22511A380005D7F1 /* MovieInfoViewController.swift */; };
+		2F33218322511A380005D7F1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33217E22511A380005D7F1 /* Movie.swift */; };
+		2F33218422511A380005D7F1 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33218022511A380005D7F1 /* MovieTableViewCell.swift */; };
+		2F33218C22511A4E0005D7F1 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33218722511A4E0005D7F1 /* JSONDecoderExtension.swift */; };
+		2F33218D22511A4E0005D7F1 /* GetMoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33218922511A4E0005D7F1 /* GetMoviesResponse.swift */; };
+		2F33218E22511A4E0005D7F1 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33218B22511A4E0005D7F1 /* NetworkingManager.swift */; };
+		2F3321912251211D0005D7F1 /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3321902251211D0005D7F1 /* AlertDisplayer.swift */; };
+		2FB6A25222536B3600128242 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB6A25122536B3600128242 /* Reachability.swift */; };
+		89CECD147AD94A45CA78751B /* Pods_Ronald_Interview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B716DF7FF4899B0352E051 /* Pods_Ronald_Interview.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F1775012252182C002D5F26 /* DrawingPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPadViewController.swift; sourceTree = "<group>"; };
+		2F17750322521843002D5F26 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		2F332160225119C30005D7F1 /* Ronald Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ronald Interview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F332163225119C30005D7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F332168225119C30005D7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F33216B225119C30005D7F1 /* Ronald_Interview.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ronald_Interview.xcdatamodel; sourceTree = "<group>"; };
+		2F33216D225119C30005D7F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F332170225119C30005D7F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F332172225119C30005D7F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F33217A22511A380005D7F1 /* MovieListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		2F33217C22511A380005D7F1 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
+		2F33217E22511A380005D7F1 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2F33218022511A380005D7F1 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		2F33218722511A4E0005D7F1 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
+		2F33218922511A4E0005D7F1 /* GetMoviesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMoviesResponse.swift; sourceTree = "<group>"; };
+		2F33218B22511A4E0005D7F1 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		2F3321902251211D0005D7F1 /* AlertDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
+		2FB6A25122536B3600128242 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		53B716DF7FF4899B0352E051 /* Pods_Ronald_Interview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ronald_Interview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		817FF0BBFEA3A50E7D86DD4B /* Pods-Ronald Interview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ronald Interview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ronald Interview/Pods-Ronald Interview.debug.xcconfig"; sourceTree = "<group>"; };
+		8508B42D8574DFBE2AB56443 /* Pods-Ronald Interview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ronald Interview.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ronald Interview/Pods-Ronald Interview.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F33215D225119C30005D7F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CECD147AD94A45CA78751B /* Pods_Ronald_Interview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D663EF9CE9720928AD8EAA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53B716DF7FF4899B0352E051 /* Pods_Ronald_Interview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F17750022521807002D5F26 /* Drawing Pad */ = {
+			isa = PBXGroup;
+			children = (
+				2F1775012252182C002D5F26 /* DrawingPadViewController.swift */,
+				2F17750322521843002D5F26 /* CanvasView.swift */,
+			);
+			path = "Drawing Pad";
+			sourceTree = "<group>";
+		};
+		2F332157225119C30005D7F1 = {
+			isa = PBXGroup;
+			children = (
+				2F332162225119C30005D7F1 /* Ronald Interview */,
+				2F332161225119C30005D7F1 /* Products */,
+				5F41EAEB5647397970B6F18A /* Pods */,
+				1D663EF9CE9720928AD8EAA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F332161225119C30005D7F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F332160225119C30005D7F1 /* Ronald Interview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F332162225119C30005D7F1 /* Ronald Interview */ = {
+			isa = PBXGroup;
+			children = (
+				2F33218522511A4E0005D7F1 /* includes */,
+				2F33217822511A380005D7F1 /* Movie */,
+				2F17750022521807002D5F26 /* Drawing Pad */,
+				2F332163225119C30005D7F1 /* AppDelegate.swift */,
+				2F332167225119C30005D7F1 /* Main.storyboard */,
+				2F33216D225119C30005D7F1 /* Assets.xcassets */,
+				2F33216F225119C30005D7F1 /* LaunchScreen.storyboard */,
+				2F332172225119C30005D7F1 /* Info.plist */,
+				2F33216A225119C30005D7F1 /* Ronald_Interview.xcdatamodeld */,
+			);
+			path = "Ronald Interview";
+			sourceTree = "<group>";
+		};
+		2F33217822511A380005D7F1 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				2F33217922511A380005D7F1 /* ViewModel */,
+				2F33217B22511A380005D7F1 /* Controller */,
+				2F33217D22511A380005D7F1 /* Model */,
+				2F33217F22511A380005D7F1 /* View */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		2F33217922511A380005D7F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F33217A22511A380005D7F1 /* MovieListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F33217B22511A380005D7F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F33217C22511A380005D7F1 /* MovieInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F33217D22511A380005D7F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F33217E22511A380005D7F1 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F33217F22511A380005D7F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F33218022511A380005D7F1 /* MovieTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F33218522511A4E0005D7F1 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				2F33218F2251210B0005D7F1 /* Common */,
+				2F33218622511A4E0005D7F1 /* Extension */,
+				2F33218822511A4E0005D7F1 /* Response */,
+				2F33218A22511A4E0005D7F1 /* Networking */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		2F33218622511A4E0005D7F1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F33218722511A4E0005D7F1 /* JSONDecoderExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F33218822511A4E0005D7F1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2F33218922511A4E0005D7F1 /* GetMoviesResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2F33218A22511A4E0005D7F1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2FB6A25122536B3600128242 /* Reachability.swift */,
+				2F33218B22511A4E0005D7F1 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2F33218F2251210B0005D7F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F3321902251211D0005D7F1 /* AlertDisplayer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5F41EAEB5647397970B6F18A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				817FF0BBFEA3A50E7D86DD4B /* Pods-Ronald Interview.debug.xcconfig */,
+				8508B42D8574DFBE2AB56443 /* Pods-Ronald Interview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F33215F225119C30005D7F1 /* Ronald Interview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F332175225119C30005D7F1 /* Build configuration list for PBXNativeTarget "Ronald Interview" */;
+			buildPhases = (
+				1133334601703D13953215A2 /* [CP] Check Pods Manifest.lock */,
+				2F33215C225119C30005D7F1 /* Sources */,
+				2F33215D225119C30005D7F1 /* Frameworks */,
+				2F33215E225119C30005D7F1 /* Resources */,
+				5793C0229274D97BEFE9F7A3 /* [CP] Embed Pods Frameworks */,
+				15D965380E7970AE823CFE8F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ronald Interview";
+			productName = "Ronald Interview";
+			productReference = 2F332160225119C30005D7F1 /* Ronald Interview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F332158225119C30005D7F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ronald Kwok";
+				TargetAttributes = {
+					2F33215F225119C30005D7F1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F33215B225119C30005D7F1 /* Build configuration list for PBXProject "Ronald Interview" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F332157225119C30005D7F1;
+			productRefGroup = 2F332161225119C30005D7F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F33215F225119C30005D7F1 /* Ronald Interview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F33215E225119C30005D7F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F332171225119C30005D7F1 /* LaunchScreen.storyboard in Resources */,
+				2F33216E225119C30005D7F1 /* Assets.xcassets in Resources */,
+				2F332169225119C30005D7F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1133334601703D13953215A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ronald Interview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15D965380E7970AE823CFE8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ronald Interview/Pods-Ronald Interview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5793C0229274D97BEFE9F7A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ronald Interview/Pods-Ronald Interview-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ronald Interview/Pods-Ronald Interview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F33215C225119C30005D7F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1775022252182C002D5F26 /* DrawingPadViewController.swift in Sources */,
+				2F33218D22511A4E0005D7F1 /* GetMoviesResponse.swift in Sources */,
+				2F17750422521843002D5F26 /* CanvasView.swift in Sources */,
+				2F33218222511A380005D7F1 /* MovieInfoViewController.swift in Sources */,
+				2F3321912251211D0005D7F1 /* AlertDisplayer.swift in Sources */,
+				2F33218E22511A4E0005D7F1 /* NetworkingManager.swift in Sources */,
+				2F33218C22511A4E0005D7F1 /* JSONDecoderExtension.swift in Sources */,
+				2F33218422511A380005D7F1 /* MovieTableViewCell.swift in Sources */,
+				2F33218322511A380005D7F1 /* Movie.swift in Sources */,
+				2F332164225119C30005D7F1 /* AppDelegate.swift in Sources */,
+				2F33216C225119C30005D7F1 /* Ronald_Interview.xcdatamodeld in Sources */,
+				2F33218122511A380005D7F1 /* MovieListViewModel.swift in Sources */,
+				2FB6A25222536B3600128242 /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F332167225119C30005D7F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F332168225119C30005D7F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F33216F225119C30005D7F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F332170225119C30005D7F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F332173225119C30005D7F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F332174225119C30005D7F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F332176225119C30005D7F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817FF0BBFEA3A50E7D86DD4B /* Pods-Ronald Interview.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Ronald Interview/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hon-pan-kwok.Ronald-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F332177225119C30005D7F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8508B42D8574DFBE2AB56443 /* Pods-Ronald Interview.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Ronald Interview/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hon-pan-kwok.Ronald-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F33215B225119C30005D7F1 /* Build configuration list for PBXProject "Ronald Interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F332173225119C30005D7F1 /* Debug */,
+				2F332174225119C30005D7F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F332175225119C30005D7F1 /* Build configuration list for PBXNativeTarget "Ronald Interview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F332176225119C30005D7F1 /* Debug */,
+				2F332177225119C30005D7F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F33216A225119C30005D7F1 /* Ronald_Interview.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F33216B225119C30005D7F1 /* Ronald_Interview.xcdatamodel */,
+			);
+			currentVersion = 2F33216B225119C30005D7F1 /* Ronald_Interview.xcdatamodel */;
+			path = Ronald_Interview.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2F332158225119C30005D7F1 /* Project object */;
+}
